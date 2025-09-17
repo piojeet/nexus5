@@ -134,6 +134,15 @@ header {
     padding: 0 5rem;
 }
 
+.menu_btn,
+.close_btn {
+    display: none;
+}
+
+.nav_links-btn-mb {
+    display: none;
+}
+
 nav {
     /* Flex container for navigation bar */
     display: flex;
@@ -250,6 +259,10 @@ nav {
     /* Container for feature icons in hero */
     display: flex;
     gap: 1rem;
+}
+
+.home_hero-icons-mb {
+    display: none;
 }
 
 .home_hero-icon img {
@@ -684,6 +697,7 @@ nav {
     z-index: 10;
     filter: blur(5px);
     /* Soft blur for effect */
+    pointer-events: none;
 }
 
 /* Right gradient overlay for Swiper (visual fade effect) */
@@ -699,6 +713,7 @@ nav {
     z-index: 10;
     filter: blur(5px);
     /* Soft blur for effect */
+    pointer-events: none;
 }
 
 /* Swiper pagination bullet styling for kids saying section (inactive) */
@@ -930,6 +945,11 @@ nav {
 }
 
 /* student learning page style  */
+/* ===========================
+   Student Learning Page Styles
+   =========================== */
+
+/* Paragraph under the student expert section heading */
 .student_head-para {
     font-family: var(--dm-sans-r);
     text-align: center;
@@ -937,44 +957,57 @@ nav {
     line-height: 24px;
 }
 
+/* Image container for student expert cards, maintains aspect ratio */
 .student_expert-image {
     aspect-ratio: 1/.85;
 }
 
+/* Card styling for each student expert */
 .student_expert-card {
     background: #ffffff1e;
+    /* semi-transparent white */
     padding: 1rem;
     border-radius: 32px;
 }
 
+/* Role/description text in student expert card */
 .student_expert-role {
     margin-top: 8px;
 }
 
+/* Title styling for student expert section */
 .student_expert-title {
     text-align: center;
     margin: auto;
 }
 
+/* Original part of the expert title (black color) */
 .student_expert-title .why_explorers-title-ori {
     color: var(--black-color);
 }
 
+/* Highlighted part of the expert title (primary color) */
 .student_expert-title .why_explorers-title-exo {
     color: var(--primary-color);
 }
 
-/* exploe section style  */
+/* ===========================
+   Explore Section Styles
+   =========================== */
+
+/* Main title for the explorers section */
 .explorers_title {
     font-size: 64px;
     text-align: center;
     text-transform: uppercase;
 }
 
+/* Description text under the explorers title */
 .explorers_description {
     margin-top: 8px;
 }
 
+/* Grid layout for explorer features */
 .explorers_features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -983,6 +1016,7 @@ nav {
     margin-top: 60px;
 }
 
+/* Container for the explorers section */
 .explorers_section {
     max-width: 1440px;
     width: 100%;
@@ -991,6 +1025,7 @@ nav {
     position: relative;
 }
 
+/* Individual feature item in the explorers section */
 .explorers_feature-item {
     display: flex;
     flex-direction: column;
@@ -998,6 +1033,7 @@ nav {
     justify-content: space-between;
 }
 
+/* Title for each explorer feature */
 .explorers_feature-title {
     font-size: 22px;
     font-family: var(--exo2-eb);
@@ -1005,6 +1041,7 @@ nav {
     text-transform: uppercase;
 }
 
+/* Description text for each explorer feature */
 .explorers_feature-text {
     font-size: 14px;
     font-family: var(--dm-sans-r);
@@ -1014,17 +1051,24 @@ nav {
     margin-top: 8px;
 }
 
+/* Decorative spotlight image in the student section */
 .studen_setlight {
     position: absolute;
     top: 64px;
     right: 0;
 }
 
+/* ===========================
+   Demo Section Styles
+   =========================== */
+
+/* Main title for the demo section */
 .demo_title {
     font-size: 64px;
     text-transform: uppercase;
 }
 
+/* Container for the demo section */
 .demo_section {
     max-width: 1440px;
     width: 100%;
@@ -1032,12 +1076,14 @@ nav {
     padding: 48px 64px;
 }
 
+/* Grid layout for demo content and form */
 .demo_container {
     display: grid;
     grid-template-columns: 1fr .9fr;
     gap: 1.5rem;
 }
 
+/* Wrapper for the demo form */
 .demo_form-wrapper {
     background: var(--secondary-color);
     padding: 1.5rem;
@@ -1047,6 +1093,7 @@ nav {
     gap: 32px;
 }
 
+/* Demo form layout */
 .demo_form {
     display: flex;
     flex-direction: column;
@@ -1054,24 +1101,28 @@ nav {
     justify-content: space-between;
 }
 
+/* Container for all form fields */
 .demo_form-fields {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+/* Row layout for form fields (two columns) */
 .demo_form-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
+/* Individual field in the form */
 .demo_field {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
+/* Input styling for the demo form */
 .demo_input {
     padding: 14px 12px;
     background: transparent;
@@ -1083,22 +1134,26 @@ nav {
     line-height: 24px;
 }
 
+/* Placeholder color for demo form inputs */
 .demo_input::placeholder {
     color: var(--primary-color);
 }
 
+/* Title above the demo form */
 .demo_form-title {
     font-size: 34px;
     font-family: var(--orbitron-sb);
     color: var(--primary-color);
 }
 
+/* Label styling for form fields */
 .demo_label {
     font-family: var(--dm-sans-m);
     color: var(--primary-color);
     line-height: 24px;
 }
 
+/* Textarea styling for the demo form */
 .demo_textarea {
     padding: 14px 12px;
     background: transparent;
@@ -1113,24 +1168,459 @@ nav {
     resize: vertical;
 }
 
+/* Placeholder color for textarea */
 .demo_textarea::placeholder {
     color: var(--primary-color);
 }
 
+/* Button styling for the demo form */
 .demo_button {
     border: none;
     outline: none;
     cursor: pointer;
 }
 
+/* Header section in the demo area */
 .demo_header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
+/* Description text in the demo section */
 .demo_description {
     font-family: var(--dm-sans-r);
     color: #283D52;
     line-height: 24px;
+}
+
+.footer-partners-mb {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .home_hero-title {
+        font-size: 51px;
+        line-height: normal;
+    }
+
+    .home_hero-container {
+        min-height: 640px;
+    }
+
+    .why_explorers-title,
+    .experts-title,
+    .kids-saying-title,
+    .book-summaries-title,
+    .explorers_title,
+    .demo_title {
+        font-size: 40px;
+    }
+
+    .why_explorers-subtitle {
+        margin-top: 8px;
+    }
+
+    .why_explorers-cta-title {
+        font-size: 35px;
+    }
+
+    .why_explorers-cta {
+        width: 330px;
+    }
+
+    .experts-title {
+        max-width: 500px;
+    }
+
+    .expert-card {
+        width: 250px;
+    }
+
+    .why_explorers {
+        padding: 3.75rem 20px;
+    }
+
+    .demo_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .demo_title,
+    .demo_description {
+        text-align: center;
+    }
+
+    .studen_setlight img {
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home_hero-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 1rem;
+    }
+
+    .home_hero-left,
+    .home_hero-right {
+        padding: 0;
+    }
+
+    .home_hero-container {
+        border-radius: 24px;
+    }
+
+    .home_hero-right {
+        gap: 1rem;
+    }
+
+    .home_hero-icons-dc {
+        display: none;
+    }
+
+    .home_hero-icons-mb {
+        display: flex;
+    }
+
+    .home_hero-btn {
+        margin-top: 1rem;
+    }
+
+    .home_hero-description {
+        margin-top: 1rem;
+    }
+
+    .home_hero-title {
+        font-size: 40px;
+    }
+
+    .home_hero-description {
+        font-size: 18px;
+    }
+
+    .explorers_top-img img {
+        width: 15vw;
+    }
+
+    .why_explorers-content {
+        flex-direction: column;
+    }
+
+    .why_explorers-cta {
+        gap: 60px;
+        width: 100%;
+    }
+
+    .why_explorers-title,
+    .experts-title,
+    .kids-saying-title,
+    .book-summaries-title,
+    .explorers_title,
+    .demo_title {
+        font-size: 30px;
+    }
+
+    .why_explorers-subtitle {
+        font-size: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .kids_saying-myswiper::before,
+    .kids_saying-myswiper::after {
+        display: none;
+    }
+
+    .kids-saying-container {
+        padding: 0 1rem;
+    }
+
+    .expert_slide {
+        width: 100% !important;
+    }
+
+    header {
+        padding: 0 1rem;
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    .nav_logo img {
+        width: 64px;
+    }
+
+    .links_nav {
+        position: fixed;
+        height: 100dvh;
+        background: var(--primary-color);
+        left: -300px;
+        top: 0;
+        max-width: 300px;
+        width: 100%;
+        z-index: 100;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        transition: .5s cubic-bezier(0.23, 1.00, 0.32, 1.00);
+    }
+
+    .links_nav.active {
+        left: 0;
+    }
+
+    .links_nav ul {
+        flex-direction: column;
+
+    }
+
+    .nav_links-btn-dc {
+        display: none;
+    }
+
+    .menu_btn {
+        width: 48px;
+        height: 48px;
+        background: var(--secondary-color);
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: none;
+        color: var(--primary-color);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .nav_links-btn-mb,
+    .close_btn {
+        display: block;
+    }
+
+    .close_btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 30px;
+        height: 30px;
+        background: var(--secondary-color);
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .home_hero-icon img {
+        border-radius: 1rem;
+    }
+
+    .same_btn {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1.4fr .6fr;
+    }
+
+    .book-summaries {
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
+        padding: 40px 16px;
+    }
+
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-top {
+        padding: 40px 0;
+    }
+
+    .expert_myswiper {
+        margin-top: 40px;
+    }
+
+    .experts-container {
+        padding: 2.5rem 20px;
+    }
+
+    .kids-saying {
+        padding: 40px 0;
+    }
+
+    .experts-container {
+        border-radius: 24px;
+    }
+
+    .testimonial-author .author-name {
+        font-size: 20px;
+    }
+
+    .testimonial-author .author-role {
+        font-size: 18px;
+    }
+
+    .explorers_features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .explorers_section,
+    .demo_section {
+        padding: 40px 20px;
+    }
+
+    .demo_header {
+        gap: 8px;
+    }
+
+    .demo_form-title {
+        font-size: 24px;
+    }
+
+    .demo_label {
+        font-size: 14px;
+    }
+
+    .studen_setlight {
+        display: none;
+    }
+
+    .explorers_features {
+        margin-top: 24px;
+    }
+
+    .expert-image img {
+        border-radius: 32px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-brand {
+        margin-bottom: 20px;
+    }
+
+    .footer-partners-dc {
+        display: none;
+    }
+
+    .footer-partners-mb {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .footer-partners .line {
+        width: 1px;
+        height: 40px;
+    }
+
+    .footer-description {
+        margin-top: 1rem;
+    }
+
+    .footer-title {
+        font-size: 22px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .why_explorers-features {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .testimonial-content {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .footer-copyright,
+    .footer-links-list a {
+        font-size: 14px;
+    }
+
+    .footer-links-list {
+        gap: 8px;
+    }
+
+    .footer-title {
+        margin-bottom: 1rem;
+    }
+
+    .book-summaries-subtitle {
+        margin-top: 1rem;
+    }
+
+    .kids-saying-subtitle {
+        font-size: 14px;
+    }
+
+    .explorers_top-img {
+        top: 47px;
+    }
+
+    .explorers_features {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .demo_form-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .explorers_feature-item {
+        gap: .7rem;
+    }
+
+    .explorers_icon-wrapper img {
+        width: 32px;
+    }
+
+    .explorers_feature-title {
+        font-size: 18px;
+    }
 }

@@ -1533,6 +1533,11 @@ nav {
     .demo_button {
         margin: auto;
     }
+
+    .why_explorers-icon {
+        width: 48px;
+        height: 48px;
+    }
 }
 
 

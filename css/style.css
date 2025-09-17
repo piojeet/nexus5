@@ -1520,6 +1520,19 @@ nav {
     .footer-logo img {
         width: 80px;
     }
+
+    .explorers_description,
+    .demo_description {
+        font-size: 14px;
+    }
+
+    .demo_form {
+        gap: 24px;
+    }
+
+    .demo_button {
+        margin: auto;
+    }
 }
 
 

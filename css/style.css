@@ -1642,3 +1642,10 @@ nav {
         font-size: 18px;
     }
 }
+
+
+@media only screen and (max-width: 425px) {
+    .testimonial-image img {
+        width: 100%;
+    }
+}

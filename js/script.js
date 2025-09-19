@@ -40,7 +40,6 @@ document.addEventListener("click", (e) => {
     const cursor = document.getElementById('sat-cursor');
     if(!cursor) return;
   
-    // disable on touch devices
     const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
     if (isTouch) {
       cursor.classList.add('sat-disabled');
@@ -50,37 +49,43 @@ document.addEventListener("click", (e) => {
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
     let curX = mouseX, curY = mouseY;
-    const ease = 0.18; // lower = smoother lag
+    const ease = 0.18;
   
-    // update target coords on mouse move
     window.addEventListener('mousemove', e => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      // show immediately if hidden
       cursor.style.opacity = '1';
     });
   
-    // optional: hide when leaving viewport
-    window.addEventListener('mouseleave', () => {
-      cursor.style.opacity = '0';
-    });
-    window.addEventListener('mouseenter', () => {
-      cursor.style.opacity = '1';
-    });
+    document.addEventListener("mouseleave", () => {
+        cursor.style.opacity = "0";
+      });
+      
+      // Wapas <main> me aane par dikhana
+      document.addEventListener("mouseenter", () => {
+        cursor.style.opacity = "1";
+      });
   
-    // reduce size when hovering interactive elements
     const interactiveSelector = 'a, button, input, textarea, select, .clickable';
     function checkHover() {
       const el = document.elementFromPoint(mouseX, mouseY);
       if (!el) return;
-      if (el.closest && el.closest(interactiveSelector)) {
-        cursor.classList.add('sat-small');
+  
+      // link/button pe hover → cursor gayab
+      if (el.closest(interactiveSelector)) {
+        cursor.style.opacity = '0';
       } else {
-        cursor.classList.remove('sat-small');
+        cursor.style.opacity = '1';
+      }
+  
+      // footer pe hover → color white
+      if (el.closest('footer')) {
+        cursor.classList.add('sat-white');
+      } else {
+        cursor.classList.remove('sat-white');
       }
     }
   
-    // animation loop
     function raf() {
       curX += (mouseX - curX) * ease;
       curY += (mouseY - curY) * ease;
@@ -89,10 +94,5 @@ document.addEventListener("click", (e) => {
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-  
-    // OPTIONAL: function to enable/disable cursor dynamically
-    window.customCursor = {
-      disable() { cursor.classList.add('sat-disabled'); document.documentElement.style.cursor = ''; },
-      enable() { cursor.classList.remove('sat-disabled'); document.documentElement.style.cursor = 'none'; }
-    };
   })();
+  

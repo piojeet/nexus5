@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -129,7 +130,7 @@
 header {
     /* Container for the site header */
     width: 100%;
-    max-width: 1440px;
+    max-width: 1600px;
     margin: auto;
     padding: 0 5rem;
 }
@@ -145,8 +146,14 @@ header {
 
 nav {
     /* Flex container for navigation bar */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100px;
 }
@@ -158,7 +165,11 @@ nav {
 
 .links_nav ul {
     /* Navigation links list styling */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 1.5rem;
     list-style: none;
@@ -169,6 +180,8 @@ nav {
     font-family: var(--product-sans-r);
     color: var(--light-gray-color);
     text-decoration: none;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
     transition: all .2s ease;
 }
 
@@ -191,6 +204,8 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -212,27 +227,40 @@ nav {
 
 .home_hero {
     /* Hero section container */
-    max-width: 1440px;
+    /* max-width: 1600px; */
     width: 100%;
     margin: auto;
-    padding: .6rem 1rem;
+    padding: .6rem 0;
+    background: var(--secondary-color);
 }
 
 .home_hero-container {
     /* Main grid container for hero section */
-    background: var(--secondary-color);
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1.2fr .8fr;
     grid-template-columns: 1.2fr .8fr;
-    border-radius: 3.75rem;
+    /* border-radius: 3.75rem; */
     min-height: 825px;
     height: auto;
+    gap: 100px;
+    padding: 48px;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .home_hero-left {
     /* Left side of hero: text and icons */
-    padding: 3rem;
+    /* padding: 3rem; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -257,6 +285,8 @@ nav {
 
 .home_hero-icons {
     /* Container for feature icons in hero */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 1rem;
 }
@@ -273,10 +303,17 @@ nav {
 
 .home_hero-right {
     /* Right side of hero: main image, info, button */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 2rem;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -285,6 +322,7 @@ nav {
     width: 100%;
     border-radius: 2rem;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     aspect-ratio: 1/.9;
 }
@@ -305,10 +343,10 @@ nav {
 
 .why_explorers {
     /* Main container for the explorers section */
-    max-width: 1440px;
+    max-width: 1600px;
     width: 100%;
     margin: auto;
-    padding: 3.75rem 4rem;
+    padding: 3.75rem 48px;
     position: relative;
 }
 
@@ -357,8 +395,12 @@ nav {
 
 .why_explorers-content {
     /* Layout for features and CTA block */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 24px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 60px;
 }
@@ -366,10 +408,18 @@ nav {
 .why_explorers-cta {
     /* Call-to-action block styling */
     width: 400px;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     background: var(--secondary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1.5rem;
     border-radius: 1rem;
@@ -377,7 +427,9 @@ nav {
 
 .why_explorers-features {
     /* Grid layout for feature cards */
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 24px 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
@@ -395,9 +447,16 @@ nav {
     border-radius: 50%;
     width: 58px;
     height: 58px;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -444,18 +503,13 @@ nav {
 
 /* Main experts section container */
 .experts {
-    max-width: 1440px;
     /* Limit section width */
     width: 100%;
     /* Full width */
-    padding: 0 1rem;
     /* Horizontal padding (auto is ignored for padding, likely a mistake) */
     margin: auto;
     /* Center section */
-    padding-bottom: 2rem;
-    /* Space below section */
-    padding-top: 1rem;
-    /* Space above section */
+    background: var(--secondary-color);
 }
 
 .student_experts {
@@ -464,12 +518,11 @@ nav {
 
 /* Inner container for experts section */
 .experts-container {
-    background: var(--secondary-color);
     /* Section background color */
-    padding: 2.5rem;
+    padding: 3.75rem 48px;
     /* Inner padding */
-    border-radius: 3.75rem;
-    /* Rounded corners */
+    max-width: 1600px;
+    margin: auto;
 }
 
 /* Section title styling */
@@ -522,6 +575,8 @@ nav {
 
 /* Expert image container */
 .expert-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Flex container for image */
     aspect-ratio: .9/1;
@@ -534,6 +589,7 @@ nav {
     /* Full width */
     height: 100%;
     /* Full height */
+    -o-object-fit: cover;
     object-fit: cover;
     /* Cover the container */
     border-radius: 42px;
@@ -548,6 +604,8 @@ nav {
 
 /* Swiper slide for expert */
 .expert_swiper {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
     width: fit-content !important;
     /* Fit content width for Swiper slide */
 }
@@ -592,13 +650,13 @@ nav {
 
 /* Kids Saying/Testimonial Section container */
 .kids-saying {
-    max-width: 1440px;
+    max-width: 1600px;
     /* Maximum width for the section */
     width: 100%;
     /* Full width */
     margin: auto;
     /* Center horizontally */
-    padding: 60px 0;
+    padding: 60px 48px;
     /* Vertical padding */
 }
 
@@ -628,6 +686,8 @@ nav {
 .testimonial {
     width: 936px;
     /* Fixed width for testimonial card */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Flex layout for image and content */
     gap: 1.5rem;
@@ -636,10 +696,17 @@ nav {
 
 /* Testimonial content (text and author) */
 .testimonial-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Flex layout */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     /* Stack vertically */
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     /* Space between text and author */
     padding: 8px 0;
@@ -692,9 +759,12 @@ nav {
     top: -20px;
     width: 200px;
     height: 100%;
+    background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#ffff));
+    background: -o-linear-gradient(right, #ffffff00, #ffff);
     background: linear-gradient(to left, #ffffff00, #ffff);
     /* Transparent to white */
     z-index: 10;
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     /* Soft blur for effect */
     pointer-events: none;
@@ -708,9 +778,12 @@ nav {
     top: -20px;
     width: 200px;
     height: 100%;
+    background: -webkit-gradient(linear, right top, left top, from(#ffffff), to(#ffffff00));
+    background: -o-linear-gradient(right, #ffffff, #ffffff00);
     background: linear-gradient(to left, #ffffff, #ffffff00);
     /* White to transparent */
     z-index: 10;
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     /* Soft blur for effect */
     pointer-events: none;
@@ -730,19 +803,21 @@ nav {
 
 /* Swiper slide for kids saying/testimonials */
 .kids_swiper-slide {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
     width: fit-content !important;
     /* Fit content width for Swiper slide */
 }
 
 /* Book Summaries Section style */
 .book-summaries {
-    max-width: 1440px;
+    max-width: 1600px;
     /* Limit the maximum width */
     width: 100%;
     /* Take full width up to max */
     margin: auto;
     /* Center horizontally */
-    padding: 48px 64px;
+    padding: 60px 48px;
     /* Section padding (top/bottom, left/right) */
 }
 
@@ -760,6 +835,8 @@ nav {
 .book-summaries-image {
     width: 177px;
     /* Fixed width for image container */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Use flex for alignment if needed */
 }
@@ -796,14 +873,16 @@ nav {
 
 /* Footer content wrapper with background image and gradient overlay */
 .footer-container {
-    max-width: 1440px;
+    max-width: 1600px;
     /* Limit footer width */
     width: 100%;
     /* Full width up to max */
     margin: auto;
     /* Center horizontally */
-    padding: 0 64px;
+    padding: 0 48px;
     /* Horizontal padding */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url('../assets/footer-bg.png');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/footer-bg.png');
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/footer-bg.png');
     /* Overlay gradient on image */
     background-repeat: no-repeat;
@@ -816,8 +895,10 @@ nav {
 
 /* Top section of the footer with grid layout */
 .footer-top {
+    display: -ms-grid;
     display: grid;
     /* Use grid for layout */
+    -ms-grid-columns: 1.3fr 1fr 1fr;
     grid-template-columns: 1.3fr 1fr 1fr;
     /* Three columns, first is wider */
     padding: 70px 0;
@@ -826,8 +907,13 @@ nav {
 
 /* List of footer links */
 .footer-links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Use flexbox */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     /* Stack links vertically */
     gap: 14px;
@@ -849,6 +935,8 @@ nav {
 .footer-links-list a:hover {
     color: var(--secondary-color);
     /* Change color on hover */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     /* Shrink to fit text */
 }
@@ -867,6 +955,8 @@ nav {
 
 /* Group of logos in the footer */
 .footer-logo-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Arrange logos in a row */
     gap: 2rem;
@@ -881,8 +971,13 @@ nav {
 
 /* Partner logos container */
 .footer-partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Use flexbox */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     /* Stack vertically */
     gap: 8px;
@@ -916,8 +1011,12 @@ nav {
 
 /* Bottom section of the footer */
 .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Arrange content in a row */
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     /* Space out children */
     padding: 30px 0;
@@ -936,8 +1035,12 @@ nav {
 
 /* Social media icons container */
 .footer-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Arrange icons in a row */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /* Center vertically */
     gap: 12px;
@@ -1009,8 +1112,12 @@ nav {
 
 /* Grid layout for explorer features */
 .explorers_features {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 32px 1fr 32px 1fr;
     grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 32px;
+    -moz-column-gap: 32px;
     column-gap: 32px;
     row-gap: 40px;
     margin-top: 60px;
@@ -1018,18 +1125,25 @@ nav {
 
 /* Container for the explorers section */
 .explorers_section {
-    max-width: 1440px;
+    max-width: 1600px;
     width: 100%;
-    padding: 60px 64px;
+    padding: 60px 48px;
     margin: auto;
     position: relative;
 }
 
 /* Individual feature item in the explorers section */
 .explorers_feature-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 24px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1070,15 +1184,17 @@ nav {
 
 /* Container for the demo section */
 .demo_section {
-    max-width: 1440px;
+    max-width: 1600px;
     width: 100%;
     margin: auto;
-    padding: 48px 64px;
+    padding: 60px 48px;
 }
 
 /* Grid layout for demo content and form */
 .demo_container {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1.5rem .9fr;
     grid-template-columns: 1fr .9fr;
     gap: 1.5rem;
 }
@@ -1088,36 +1204,60 @@ nav {
     background: var(--secondary-color);
     padding: 1.5rem;
     border-radius: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 32px;
 }
 
 /* Demo form layout */
 .demo_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 32px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 /* Container for all form fields */
 .demo_form-fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 1rem;
 }
 
 /* Row layout for form fields (two columns) */
 .demo_form-row {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
 /* Individual field in the form */
 .demo_field {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 8px;
 }
@@ -1135,6 +1275,22 @@ nav {
 }
 
 /* Placeholder color for demo form inputs */
+.demo_input::-webkit-input-placeholder {
+    color: var(--primary-color);
+}
+
+.demo_input::-moz-placeholder {
+    color: var(--primary-color);
+}
+
+.demo_input:-ms-input-placeholder {
+    color: var(--primary-color);
+}
+
+.demo_input::-ms-input-placeholder {
+    color: var(--primary-color);
+}
+
 .demo_input::placeholder {
     color: var(--primary-color);
 }
@@ -1169,6 +1325,22 @@ nav {
 }
 
 /* Placeholder color for textarea */
+.demo_textarea::-webkit-input-placeholder {
+    color: var(--primary-color);
+}
+
+.demo_textarea::-moz-placeholder {
+    color: var(--primary-color);
+}
+
+.demo_textarea:-ms-input-placeholder {
+    color: var(--primary-color);
+}
+
+.demo_textarea::-ms-input-placeholder {
+    color: var(--primary-color);
+}
+
 .demo_textarea::placeholder {
     color: var(--primary-color);
 }
@@ -1182,7 +1354,12 @@ nav {
 
 /* Header section in the demo area */
 .demo_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 1.5rem;
 }
@@ -1243,7 +1420,12 @@ nav {
     }
 
     .demo_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1259,6 +1441,7 @@ nav {
 
 @media only screen and (max-width: 768px) {
     .home_hero-container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 24px;
         padding: 1rem;
@@ -1282,11 +1465,16 @@ nav {
     }
 
     .home_hero-icons-mb {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     .home_hero-btn {
         margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .home_hero-description {
@@ -1306,6 +1494,9 @@ nav {
     }
 
     .why_explorers-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1371,10 +1562,19 @@ nav {
         width: 100%;
         z-index: 100;
         padding-top: 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 1rem;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-transition: .5s cubic-bezier(0.23, 1.00, 0.32, 1.00);
+        -o-transition: .5s cubic-bezier(0.23, 1.00, 0.32, 1.00);
         transition: .5s cubic-bezier(0.23, 1.00, 0.32, 1.00);
     }
 
@@ -1383,6 +1583,9 @@ nav {
     }
 
     .links_nav ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
 
     }
@@ -1396,8 +1599,14 @@ nav {
         height: 48px;
         background: var(--secondary-color);
         outline: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         outline: none;
         border: none;
@@ -1419,8 +1628,14 @@ nav {
         height: 30px;
         background: var(--secondary-color);
         color: var(--primary-color);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         border-radius: 50%;
         outline: none;
@@ -1441,12 +1656,14 @@ nav {
     }
 
     .footer-top {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1.4fr .6fr;
         grid-template-columns: 1.4fr .6fr;
     }
 
     .book-summaries {
-        max-width: 1440px;
+        max-width: 1600px;
         width: 100%;
         margin: auto;
         padding: 40px 16px;
@@ -1538,12 +1755,22 @@ nav {
         width: 48px;
         height: 48px;
     }
+
+    .book-summaries-image {
+        width: 120px;
+    }
+
+    .book_swiper-cont {
+        margin-top: 40px;
+    }
 }
 
 
 @media only screen and (max-width: 600px) {
     .footer-top {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -1557,8 +1784,15 @@ nav {
     }
 
     .footer-partners-mb {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-top: 1rem;
     }
@@ -1577,16 +1811,23 @@ nav {
     }
 
     .footer-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 1rem;
     }
 
     .why_explorers-features {
+        -ms-grid-columns: 1fr;
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
 
     .testimonial {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 1rem;
     }
@@ -1622,6 +1863,7 @@ nav {
     }
 
     .explorers_features {
+        -ms-grid-columns: 1fr;
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
@@ -1647,5 +1889,13 @@ nav {
 @media only screen and (max-width: 425px) {
     .testimonial-image img {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .home_hero-container {
+        -ms-grid-columns: 1.1fr .9fr;
+        grid-template-columns: 1.1fr .9fr;
+        gap: 120px;
     }
 }

@@ -2,463 +2,472 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="assets/logo.svg">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
 </head>
 
 <body>
-    <!-- Main site header with navigation bar -->
-    <header>
-      <!-- Navigation bar containing logo, navigation links, and call-to-action button -->
-      <nav>
-        <!-- Logo section: links to homepage -->
-        <div class="nav_logo">
-          <a href="index.html">
-            <img src="assets/logo.svg" alt="Logo">
-          </a>
-        </div>
-  
-        <!-- Navigation links section -->
-        <div class="links_nav">
-  
-          <button class="close_btn">
-            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-              stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="m22.5 22.5-21-21 21 21Zm-21 0 21-21-21 21Z"></path>
-            </svg>
-          </button>
-  
-          <ul>
-            <!-- Home link -->
-            <li><a href="index.html" class="nav_link active">Home</a></li>
-            <!-- About link -->
-            <li><a href="#" class="nav_link">About</a></li>
-            <!-- Customize link -->
-            <li><a href="#" class="nav_link">Customize</a></li>
-            <!-- Shop link -->
-            <li><a href="#" class="nav_link">Shop</a></li>
-          </ul>
-          <div class="nav_links-btn nav_links-btn-mb">
-            <a href="student-learning.html" class="same_btn nav_action-btn">Get Started</a>
-          </div>
-        </div>
-  
-        <!-- Call-to-action button section -->
-        <div class="nav_links-btn nav_links-btn-dc">
-          <a href="student-learning.html" class="same_btn nav_action-btn">Get Started</a>
-        </div>
-  
-        <button class="menu_btn">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+  <!-- Main site header with navigation bar -->
+  <header>
+    <!-- Navigation bar containing logo, navigation links, and call-to-action button -->
+    <nav>
+      <!-- Logo section: links to homepage -->
+      <div class="nav_logo">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="Logo">
+        </a>
+      </div>
+
+      <!-- Navigation links section -->
+      <div class="links_nav">
+
+        <button class="close_btn">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
             stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 18h18H3ZM3 6h18H3Zm0 6h18H3Z"></path>
+            <path d="m22.5 22.5-21-21 21 21Zm-21 0 21-21-21 21Z"></path>
           </svg>
         </button>
-  
-      </nav>
-    </header>
 
-    <main>
+        <ul>
+          <!-- Home link -->
+          <li><a href="index.html" class="nav_link active">Home</a></li>
+          <!-- About link -->
+          <li><a href="#" class="nav_link">About</a></li>
+          <!-- Customize link -->
+          <li><a href="#" class="nav_link">Customize</a></li>
+          <!-- Shop link -->
+          <li><a href="#" class="nav_link">Shop</a></li>
+        </ul>
+        <div class="nav_links-btn nav_links-btn-mb">
+          <a href="student-learning.html" class="same_btn nav_action-btn">Get Started</a>
+        </div>
+      </div>
 
-        <section class="experts student_experts">
-            <div class="experts-container">
+      <!-- Call-to-action button section -->
+      <div class="nav_links-btn nav_links-btn-dc">
+        <a href="student-learning.html" class="same_btn nav_action-btn">Get Started</a>
+      </div>
 
-                <!-- Section Title: Main heading for the experts section -->
-                <h2 class="experts-title student_expert-title">
-                    <span class="why_explorers-title-ori">Cubesat </span> <span
-                        class="why_explorers-title-exo">Capabilities</span>
-                </h2>
-                <p class="student_head-para">A spiral curriculum that grows from fundamentals to flight-like thinking.
-                </p>
+      <button class="menu_btn">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 18h18H3ZM3 6h18H3Zm0 6h18H3Z"></path>
+        </svg>
+      </button>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="experts student_experts">
+      <div class="experts-container">
+
+        <!-- Section Title: Main heading for the experts section -->
+        <h2 class="experts-title student_expert-title">
+          <span class="why_explorers-title-ori">Cubesat </span> <span
+            class="why_explorers-title-exo">Capabilities</span>
+        </h2>
+        <p class="student_head-para">A spiral curriculum that grows from fundamentals to flight-like thinking.
+        </p>
 
 
-                <!-- Swiper -->
-                <div
-                    class="swiper mySwiper expert_myswiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                    <div class="swiper-wrapper" id="swiper-wrapper-9d0de044610f1102aa" aria-live="polite">
-                        <div class="swiper-slide expert_swiper swiper-slide-active" role="group" aria-label="1 / 6">
-                            <!-- Expert Card: Individual expert profile -->
-                            <div class="expert-card student_expert-card">
-                                <!-- Expert Image -->
-                                <div class="expert-image student_expert-image">
-                                    <img src="assets/student1.png" alt="img">
-                                </div>
-                                <!-- Expert Name -->
-                                <div class="expert-name">Veronica Moronese</div>
-                                <!-- Expert Role/Title -->
-                                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide expert_swiper swiper-slide-next" role="group" aria-label="2 / 6">
-                            <!-- Expert Card: Individual expert profile -->
-                            <div class="expert-card student_expert-card">
-                                <!-- Expert Image -->
-                                <div class="expert-image student_expert-image">
-                                    <img src="assets/student1.png" alt="img">
-                                </div>
-                                <!-- Expert Name -->
-                                <div class="expert-name">Veronica Moronese</div>
-                                <!-- Expert Role/Title -->
-                                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide expert_swiper" role="group" aria-label="3 / 6">
-                            <!-- Expert Card: Individual expert profile -->
-                            <div class="expert-card student_expert-card">
-                                <!-- Expert Image -->
-                                <div class="expert-image student_expert-image">
-                                    <img src="assets/student1.png" alt="img">
-                                </div>
-                                <!-- Expert Name -->
-                                <div class="expert-name">Veronica Moronese</div>
-                                <!-- Expert Role/Title -->
-                                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide expert_swiper" role="group" aria-label="4 / 6">
-                            <!-- Expert Card: Individual expert profile -->
-                            <div class="expert-card student_expert-card">
-                                <!-- Expert Image -->
-                                <div class="expert-image student_expert-image">
-                                    <img src="assets/student1.png" alt="img">
-                                </div>
-                                <!-- Expert Name -->
-                                <div class="expert-name">Veronica Moronese</div>
-                                <!-- Expert Role/Title -->
-                                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide expert_swiper" role="group" aria-label="5 / 6">
-                            <!-- Expert Card: Individual expert profile -->
-                            <div class="expert-card student_expert-card">
-                                <!-- Expert Image -->
-                                <div class="expert-image student_expert-image">
-                                    <img src="assets/student1.png" alt="img">
-                                </div>
-                                <!-- Expert Name -->
-                                <div class="expert-name">Veronica Moronese</div>
-                                <!-- Expert Role/Title -->
-                                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide expert_swiper" role="group" aria-label="6 / 6">
-                            <!-- Expert Card: Individual expert profile -->
-                            <div class="expert-card student_expert-card">
-                                <!-- Expert Image -->
-                                <div class="expert-image student_expert-image">
-                                    <img src="assets/student1.png" alt="img">
-                                </div>
-                                <!-- Expert Name -->
-                                <div class="expert-name">Veronica Moronese</div>
-                                <!-- Expert Role/Title -->
-                                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        class="swiper-pagination expert_pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
-                            role="button" aria-label="Go to slide 1" aria-current="true"></span><span
-                            class="swiper-pagination-bullet" tabindex="0" role="button"
-                            aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
-                            role="button" aria-label="Go to slide 3"></span></div>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        <!-- Swiper -->
+        <div class="swiper mySwiper expert_myswiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+          <div class="swiper-wrapper" id="swiper-wrapper-9d0de044610f1102aa" aria-live="polite">
+            <div class="swiper-slide expert_swiper swiper-slide-active" role="group" aria-label="1 / 6">
+              <!-- Expert Card: Individual expert profile -->
+              <div class="expert-card student_expert-card">
+                <!-- Expert Image -->
+                <div class="expert-image student_expert-image">
+                  <img src="assets/student1.png" alt="img">
                 </div>
-
+                <!-- Expert Name -->
+                <div class="expert-name">Veronica Moronese</div>
+                <!-- Expert Role/Title -->
+                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the
+                  atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
+              </div>
             </div>
-        </section>
-
-        <section class="explorers_section">
-            <div class="studen_setlight">
-                <img src="assets/student.png" alt="img">
+            <div class="swiper-slide expert_swiper swiper-slide-next" role="group" aria-label="2 / 6">
+              <!-- Expert Card: Individual expert profile -->
+              <div class="expert-card student_expert-card">
+                <!-- Expert Image -->
+                <div class="expert-image student_expert-image">
+                  <img src="assets/student1.png" alt="img">
+                </div>
+                <!-- Expert Name -->
+                <div class="expert-name">Veronica Moronese</div>
+                <!-- Expert Role/Title -->
+                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the
+                  atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
+              </div>
             </div>
-            <div class="explorers_container">
-              <h2 class="explorers_title">
-                <span class="explorers_subtitle why_explorers-title-ori">what</span>
-                <span class="explorers_heading why_explorers-title-exo">students will</span>
-                <span class="explorers_subtitle why_explorers-title-ori">learn</span>
-              </h2>
-          
-              <p class="explorers_description why_explorers-description">
-                A spiral curriculum that grows from fundamentals to flight-like thinking.
+            <div class="swiper-slide expert_swiper" role="group" aria-label="3 / 6">
+              <!-- Expert Card: Individual expert profile -->
+              <div class="expert-card student_expert-card">
+                <!-- Expert Image -->
+                <div class="expert-image student_expert-image">
+                  <img src="assets/student1.png" alt="img">
+                </div>
+                <!-- Expert Name -->
+                <div class="expert-name">Veronica Moronese</div>
+                <!-- Expert Role/Title -->
+                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the
+                  atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
+              </div>
+            </div>
+            <div class="swiper-slide expert_swiper" role="group" aria-label="4 / 6">
+              <!-- Expert Card: Individual expert profile -->
+              <div class="expert-card student_expert-card">
+                <!-- Expert Image -->
+                <div class="expert-image student_expert-image">
+                  <img src="assets/student1.png" alt="img">
+                </div>
+                <!-- Expert Name -->
+                <div class="expert-name">Veronica Moronese</div>
+                <!-- Expert Role/Title -->
+                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the
+                  atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
+              </div>
+            </div>
+            <div class="swiper-slide expert_swiper" role="group" aria-label="5 / 6">
+              <!-- Expert Card: Individual expert profile -->
+              <div class="expert-card student_expert-card">
+                <!-- Expert Image -->
+                <div class="expert-image student_expert-image">
+                  <img src="assets/student1.png" alt="img">
+                </div>
+                <!-- Expert Name -->
+                <div class="expert-name">Veronica Moronese</div>
+                <!-- Expert Role/Title -->
+                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the
+                  atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
+              </div>
+            </div>
+            <div class="swiper-slide expert_swiper" role="group" aria-label="6 / 6">
+              <!-- Expert Card: Individual expert profile -->
+              <div class="expert-card student_expert-card">
+                <!-- Expert Image -->
+                <div class="expert-image student_expert-image">
+                  <img src="assets/student1.png" alt="img">
+                </div>
+                <!-- Expert Name -->
+                <div class="expert-name">Veronica Moronese</div>
+                <!-- Expert Role/Title -->
+                <p class="expert-role student_expert-role">Track the fundamental conditions like humidity of the
+                  atmosphere in high resolution with sensors equipped onboard the Atmospheric Sensing Board</p>
+              </div>
+            </div>
+
+          </div>
+          <div
+            class="swiper-pagination expert_pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+              aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
+              role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
+              role="button" aria-label="Go to slide 3"></span>
+          </div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="explorers_section">
+      <div class="studen_setlight">
+        <img src="assets/student.png" alt="img">
+      </div>
+      <div class="explorers_container">
+        <h2 class="explorers_title">
+          <span class="explorers_subtitle why_explorers-title-ori">what</span>
+          <span class="explorers_heading why_explorers-title-exo">students will</span>
+          <span class="explorers_subtitle why_explorers-title-ori">learn</span>
+        </h2>
+
+        <p class="explorers_description why_explorers-description">
+          A spiral curriculum that grows from fundamentals to flight-like thinking.
+        </p>
+
+        <div class="explorers_features">
+          <div class="explorers_feature-item">
+            <div class="explorers_icon-wrapper">
+              <img src="assets/glob.svg" alt="icon" class="explorers_icon">
+            </div>
+
+            <div class="explorers_feature-content">
+              <div class="explorers_feature-title">Electronics & sensors</div>
+              <p class="explorers_feature-text">
+                IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
               </p>
-          
-              <div class="explorers_features">
-                <div class="explorers_feature-item">
-                  <div class="explorers_icon-wrapper">
-                    <img src="assets/glob.svg" alt="icon" class="explorers_icon">
-                  </div>
-          
-                  <div class="explorers_feature-content">
-                    <div class="explorers_feature-title">Electronics & sensors</div>
-                    <p class="explorers_feature-text">
-                      IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
-                    </p>
-                  </div>
+            </div>
+          </div>
+
+          <div class="explorers_feature-item">
+            <div class="explorers_icon-wrapper">
+              <img src="assets/glob.svg" alt="icon" class="explorers_icon">
+            </div>
+
+            <div class="explorers_feature-content">
+              <div class="explorers_feature-title">Electronics & sensors</div>
+              <p class="explorers_feature-text">
+                IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
+              </p>
+            </div>
+          </div>
+
+          <div class="explorers_feature-item">
+            <div class="explorers_icon-wrapper">
+              <img src="assets/glob.svg" alt="icon" class="explorers_icon">
+            </div>
+
+            <div class="explorers_feature-content">
+              <div class="explorers_feature-title">Electronics & sensors</div>
+              <p class="explorers_feature-text">
+                IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
+              </p>
+            </div>
+          </div>
+
+          <div class="explorers_feature-item">
+            <div class="explorers_icon-wrapper">
+              <img src="assets/glob.svg" alt="icon" class="explorers_icon">
+            </div>
+
+            <div class="explorers_feature-content">
+              <div class="explorers_feature-title">Electronics & sensors</div>
+              <p class="explorers_feature-text">
+                IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
+              </p>
+            </div>
+          </div>
+
+          <div class="explorers_feature-item">
+            <div class="explorers_icon-wrapper">
+              <img src="assets/glob.svg" alt="icon" class="explorers_icon">
+            </div>
+
+            <div class="explorers_feature-content">
+              <div class="explorers_feature-title">Electronics & sensors</div>
+              <p class="explorers_feature-text">
+                IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
+              </p>
+            </div>
+          </div>
+
+          <div class="explorers_feature-item">
+            <div class="explorers_icon-wrapper">
+              <img src="assets/glob.svg" alt="icon" class="explorers_icon">
+            </div>
+
+            <div class="explorers_feature-content">
+              <div class="explorers_feature-title">Electronics & sensors</div>
+              <p class="explorers_feature-text">
+                IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo_section">
+      <div class="demo_container">
+        <div class="demo_header">
+          <h2 class="demo_title">
+            <span class="demo_highlight why_explorers-title-ori">Experience SpaceExplore</span>
+            <span class="demo_highlight why_explorers-title-exo">in Action</span>
+          </h2>
+          <p class="demo_description">
+            Discover how SpaceExplore can transform your journey into the cosmos.
+            Fill out the form below to schedule a personalized demo and see our platform’s features up close.
+          </p>
+        </div>
+
+        <div class="demo_form-wrapper">
+          <div class="demo_form-title">Request a Demo Form</div>
+          <form action="#" class="demo_form">
+            <div class="demo_form-fields">
+              <div class="demo_form-row">
+                <div class="demo_field">
+                  <label for="name" class="demo_label">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" class="demo_input">
                 </div>
-          
-                <div class="explorers_feature-item">
-                  <div class="explorers_icon-wrapper">
-                    <img src="assets/glob.svg" alt="icon" class="explorers_icon">
-                  </div>
-          
-                  <div class="explorers_feature-content">
-                    <div class="explorers_feature-title">Electronics & sensors</div>
-                    <p class="explorers_feature-text">
-                      IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
-                    </p>
-                  </div>
+                <div class="demo_field">
+                  <label for="email" class="demo_label">Your Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your Email" class="demo_input">
                 </div>
-          
-                <div class="explorers_feature-item">
-                  <div class="explorers_icon-wrapper">
-                    <img src="assets/glob.svg" alt="icon" class="explorers_icon">
-                  </div>
-          
-                  <div class="explorers_feature-content">
-                    <div class="explorers_feature-title">Electronics & sensors</div>
-                    <p class="explorers_feature-text">
-                      IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
-                    </p>
-                  </div>
+              </div>
+
+              <div class="demo_form-row">
+                <div class="demo_field">
+                  <label for="cname" class="demo_label">Company Name</label>
+                  <input type="text" id="cname" name="cname" placeholder="Company Name" class="demo_input">
                 </div>
-          
-                <div class="explorers_feature-item">
-                  <div class="explorers_icon-wrapper">
-                    <img src="assets/glob.svg" alt="icon" class="explorers_icon">
-                  </div>
-          
-                  <div class="explorers_feature-content">
-                    <div class="explorers_feature-title">Electronics & sensors</div>
-                    <p class="explorers_feature-text">
-                      IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
-                    </p>
-                  </div>
+                <div class="demo_field">
+                  <label for="number" class="demo_label">Phone Number</label>
+                  <input type="text" id="number" name="number" placeholder="Phone Number" class="demo_input">
                 </div>
-          
-                <div class="explorers_feature-item">
-                  <div class="explorers_icon-wrapper">
-                    <img src="assets/glob.svg" alt="icon" class="explorers_icon">
-                  </div>
-          
-                  <div class="explorers_feature-content">
-                    <div class="explorers_feature-title">Electronics & sensors</div>
-                    <p class="explorers_feature-text">
-                      IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
-                    </p>
-                  </div>
-                </div>
-          
-                <div class="explorers_feature-item">
-                  <div class="explorers_icon-wrapper">
-                    <img src="assets/glob.svg" alt="icon" class="explorers_icon">
-                  </div>
-          
-                  <div class="explorers_feature-content">
-                    <div class="explorers_feature-title">Electronics & sensors</div>
-                    <p class="explorers_feature-text">
-                      IMU, GPS, temperature, barometer, and camera modules, wiring & safety.
-                    </p>
-                  </div>
-                </div>
+              </div>
+
+
+              <div class="demo_field full-width">
+                <label for="disc" class="demo_label">Description</label>
+                <textarea name="disc" id="disc" placeholder="Description" class="demo_textarea"></textarea>
+              </div>
+
+            </div>
+
+            <button type="button" class="demo_button same_btn get_started">Contact Us</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="site-footer">
+      <div class="footer-container">
+
+        <!-- Top Section -->
+        <div class="footer-top">
+
+          <!-- Brand / About -->
+          <div class="footer-brand">
+            <div class="footer-logo-group">
+              <div class="footer-logo">
+                <a href="index.html"><img src="assets/logo.svg" alt="logo"></a>
+              </div>
+              <div class="footer-partners footer-partners-dc">
+                <div><img src="assets/hexstar.svg" alt="partner logo"></div>
+                <span class="line"></span>
+                <div><img src="assets/stem.svg" alt="partner logo"></div>
               </div>
             </div>
-          </section>
-          
-          <section class="demo_section">
-            <div class="demo_container">
-              <div class="demo_header">
-                <h2 class="demo_title">
-                  <span class="demo_highlight why_explorers-title-ori">Experience SpaceExplore</span>
-                  <span class="demo_highlight why_explorers-title-exo">in Action</span>
-                </h2>
-                <p class="demo_description">
-                  Discover how SpaceExplore can transform your journey into the cosmos. 
-                  Fill out the form below to schedule a personalized demo and see our platform’s features up close.
-                </p>
-              </div>
-          
-              <div class="demo_form-wrapper">
-                <div class="demo_form-title">Request a Demo Form</div>
-                <form action="#" class="demo_form">
-                  <div class="demo_form-fields">
-                    <div class="demo_form-row">
-                      <div class="demo_field">
-                        <label for="name" class="demo_label">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" class="demo_input">
-                      </div>
-                      <div class="demo_field">
-                        <label for="email" class="demo_label">Your Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your Email" class="demo_input">
-                      </div>
-                    </div>
-          
-                    <div class="demo_form-row">
-                      <div class="demo_field">
-                        <label for="cname" class="demo_label">Company Name</label>
-                        <input type="text" id="cname" name="cname" placeholder="Company Name" class="demo_input">
-                      </div>
-                      <div class="demo_field">
-                        <label for="number" class="demo_label">Phone Number</label>
-                        <input type="text" id="number" name="number" placeholder="Phone Number" class="demo_input">
-                      </div>
-                    </div>
-          
-                    
-                      <div class="demo_field full-width">
-                        <label for="disc" class="demo_label">Description</label>
-                        <textarea name="disc" id="disc" placeholder="Description" class="demo_textarea"></textarea>
-                      </div>
-                  
-                  </div>
-          
-                  <button type="button" class="demo_button same_btn get_started">Contact Us</button>
-                </form>
-              </div>
+            <p class="footer-description">
+              Lorem ipsum dolor sit amet consectetur. Egestas urna consectetur facilisis congue sit nulla.
+            </p>
+
+            <div class="footer-partners footer-partners-mb">
+              <div><img src="assets/hexstar.svg" alt="partner logo"></div>
+              <span class="line"></span>
+              <div><img src="assets/stem.svg" alt="partner logo"></div>
             </div>
-          </section>
-          
+          </div>
 
-          <footer class="site-footer">
-            <div class="footer-container">
-      
-              <!-- Top Section -->
-              <div class="footer-top">
-      
-                <!-- Brand / About -->
-                <div class="footer-brand">
-                  <div class="footer-logo-group">
-                    <div class="footer-logo">
-                      <a href="index.html"><img src="assets/logo.svg" alt="logo"></a>
-                    </div>
-                    <div class="footer-partners footer-partners-dc">
-                      <div><img src="assets/hexstar.svg" alt="partner logo"></div>
-                      <span class="line"></span>
-                      <div><img src="assets/stem.svg" alt="partner logo"></div>
-                    </div>
-                  </div>
-                  <p class="footer-description">
-                    Lorem ipsum dolor sit amet consectetur. Egestas urna consectetur facilisis congue sit nulla.
-                  </p>
-      
-                  <div class="footer-partners footer-partners-mb">
-                    <div><img src="assets/hexstar.svg" alt="partner logo"></div>
-                    <span class="line"></span>
-                    <div><img src="assets/stem.svg" alt="partner logo"></div>
-                  </div>
-                </div>
-      
-                <!-- Links Column 1 -->
-                <div class="footer-links">
-                  <h4 class="footer-title">Sitemap</h4>
-                  <div class="footer-links-list">
-                    <a href="#">Home</a>
-                    <a href="#">Resources</a>
-                    <a href="#">Referees</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Register</a>
-                    <a href="#">My account</a>
-                  </div>
-                </div>
-      
-                <!-- Links Column 2 -->
-                <div class="footer-links">
-                  <h4 class="footer-title">Sitemap</h4>
-                  <div class="footer-links-list">
-                    <a href="#">Home</a>
-                    <a href="#">Resources</a>
-                    <a href="#">Referees</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Register</a>
-                    <a href="#">My account</a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Bottom Section -->
-              <div class="footer-bottom">
-                <p class="footer-copyright">
-                  Copyright 2025 © All rights reserved.
-                </p>
-                <div class="footer-socials">
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z"
-                        fill="white" />
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_1_641)">
-                        <path
-                          d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"
-                          fill="white" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_641">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_1_645)">
-                        <path
-                          d="M22.1623 5.65593C21.3989 5.99362 20.5893 6.2154 19.7603 6.31393C20.634 5.79136 21.288 4.96894 21.6003 3.99993C20.7803 4.48793 19.8813 4.82993 18.9443 5.01493C18.3149 4.34151 17.4807 3.89489 16.5713 3.74451C15.6618 3.59413 14.7282 3.74842 13.9156 4.18338C13.1029 4.61834 12.4567 5.30961 12.0774 6.14972C11.6981 6.98983 11.607 7.93171 11.8183 8.82893C10.1554 8.74558 8.52863 8.31345 7.04358 7.56059C5.55854 6.80773 4.24842 5.75097 3.1983 4.45893C2.82659 5.09738 2.63125 5.82315 2.6323 6.56193C2.6323 8.01193 3.3703 9.29293 4.4923 10.0429C3.82831 10.022 3.17893 9.84271 2.5983 9.51993V9.57193C2.5985 10.5376 2.93267 11.4735 3.54414 12.221C4.15562 12.9684 5.00678 13.4814 5.9533 13.6729C5.33691 13.84 4.6906 13.8646 4.0633 13.7449C4.33016 14.5762 4.8503 15.3031 5.55089 15.824C6.25147 16.3449 7.09742 16.6337 7.9703 16.6499C7.10278 17.3313 6.10947 17.8349 5.04718 18.1321C3.98488 18.4293 2.87442 18.5142 1.7793 18.3819C3.69099 19.6114 5.91639 20.264 8.1893 20.2619C15.8823 20.2619 20.0893 13.8889 20.0893 8.36193C20.0893 8.18193 20.0843 7.99993 20.0763 7.82193C20.8952 7.23009 21.6019 6.49695 22.1633 5.65693L22.1623 5.65593Z"
-                          fill="white" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_645">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_1_649)">
-                        <path
-                          d="M6.93945 5.00002C6.93919 5.53046 6.72822 6.03906 6.35296 6.41394C5.9777 6.78883 5.46889 6.99929 4.93845 6.99902C4.40802 6.99876 3.89942 6.78779 3.52453 6.41253C3.14965 6.03727 2.93919 5.52846 2.93945 4.99802C2.93972 4.46759 3.15069 3.95899 3.52595 3.5841C3.90121 3.20922 4.41002 2.99876 4.94045 2.99902C5.47089 2.99929 5.97949 3.21026 6.35437 3.58552C6.72926 3.96078 6.93972 4.46959 6.93945 5.00002ZM6.99945 8.48002H2.99945V21H6.99945V8.48002ZM13.3195 8.48002H9.33945V21H13.2795V14.43C13.2795 10.77 18.0495 10.43 18.0495 14.43V21H21.9995V13.07C21.9995 6.90002 14.9395 7.13002 13.2795 10.16L13.3195 8.48002Z"
-                          fill="white" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_649">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-      
+          <!-- Links Column 1 -->
+          <div class="footer-links">
+            <h4 class="footer-title">Sitemap</h4>
+            <div class="footer-links-list">
+              <a href="#">Home</a>
+              <a href="#">Resources</a>
+              <a href="#">Referees</a>
+              <a href="#">Pricing</a>
+              <a href="#">Register</a>
+              <a href="#">My account</a>
             </div>
-          </footer>
-    </main>
+          </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <!-- Links Column 2 -->
+          <div class="footer-links">
+            <h4 class="footer-title">Sitemap</h4>
+            <div class="footer-links-list">
+              <a href="#">Home</a>
+              <a href="#">Resources</a>
+              <a href="#">Referees</a>
+              <a href="#">Pricing</a>
+              <a href="#">Register</a>
+              <a href="#">My account</a>
+            </div>
+          </div>
+        </div>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 'auto',
-            spaceBetween: 24,
-            draggable: true,
-            grabCursor: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
-    <script src="js/script.js"></script>
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            Copyright 2025 © All rights reserved.
+          </p>
+          <div class="footer-socials">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_641)">
+                  <path
+                    d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_641">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_645)">
+                  <path
+                    d="M22.1623 5.65593C21.3989 5.99362 20.5893 6.2154 19.7603 6.31393C20.634 5.79136 21.288 4.96894 21.6003 3.99993C20.7803 4.48793 19.8813 4.82993 18.9443 5.01493C18.3149 4.34151 17.4807 3.89489 16.5713 3.74451C15.6618 3.59413 14.7282 3.74842 13.9156 4.18338C13.1029 4.61834 12.4567 5.30961 12.0774 6.14972C11.6981 6.98983 11.607 7.93171 11.8183 8.82893C10.1554 8.74558 8.52863 8.31345 7.04358 7.56059C5.55854 6.80773 4.24842 5.75097 3.1983 4.45893C2.82659 5.09738 2.63125 5.82315 2.6323 6.56193C2.6323 8.01193 3.3703 9.29293 4.4923 10.0429C3.82831 10.022 3.17893 9.84271 2.5983 9.51993V9.57193C2.5985 10.5376 2.93267 11.4735 3.54414 12.221C4.15562 12.9684 5.00678 13.4814 5.9533 13.6729C5.33691 13.84 4.6906 13.8646 4.0633 13.7449C4.33016 14.5762 4.8503 15.3031 5.55089 15.824C6.25147 16.3449 7.09742 16.6337 7.9703 16.6499C7.10278 17.3313 6.10947 17.8349 5.04718 18.1321C3.98488 18.4293 2.87442 18.5142 1.7793 18.3819C3.69099 19.6114 5.91639 20.264 8.1893 20.2619C15.8823 20.2619 20.0893 13.8889 20.0893 8.36193C20.0893 8.18193 20.0843 7.99993 20.0763 7.82193C20.8952 7.23009 21.6019 6.49695 22.1633 5.65693L22.1623 5.65593Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_645">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_649)">
+                  <path
+                    d="M6.93945 5.00002C6.93919 5.53046 6.72822 6.03906 6.35296 6.41394C5.9777 6.78883 5.46889 6.99929 4.93845 6.99902C4.40802 6.99876 3.89942 6.78779 3.52453 6.41253C3.14965 6.03727 2.93919 5.52846 2.93945 4.99802C2.93972 4.46759 3.15069 3.95899 3.52595 3.5841C3.90121 3.20922 4.41002 2.99876 4.94045 2.99902C5.47089 2.99929 5.97949 3.21026 6.35437 3.58552C6.72926 3.96078 6.93972 4.46959 6.93945 5.00002ZM6.99945 8.48002H2.99945V21H6.99945V8.48002ZM13.3195 8.48002H9.33945V21H13.2795V14.43C13.2795 10.77 18.0495 10.43 18.0495 14.43V21H21.9995V13.07C21.9995 6.90002 14.9395 7.13002 13.2795 10.16L13.3195 8.48002Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_649">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      draggable: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

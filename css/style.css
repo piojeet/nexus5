@@ -1763,6 +1763,10 @@ nav {
     .book_swiper-cont {
         margin-top: 40px;
     }
+
+    #sat-cursor {
+        display: none;
+    }
 }
 
 
@@ -1897,5 +1901,37 @@ nav {
         -ms-grid-columns: 1.1fr .9fr;
         grid-template-columns: 1.1fr .9fr;
         gap: 120px;
+    }
+}
+
+
+/* show custom cursor only on wider screens (desktop) */
+@media (min-width: 768px) {
+
+    /* satellite cursor element */
+    #sat-cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 34px;
+        height: 34px;
+        pointer-events: none;
+        /* allow clicks through it */
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 150ms ease, opacity 150ms ease;
+        will-change: transform, opacity;
+        z-index: 99999;
+        opacity: 1;
+    }
+
+    /* smaller when hovering interactive elements, optional */
+    .sat-small {
+        transform: translate(-50%, -50%) scale(0.75) !important;
+        opacity: 0.95;
+    }
+
+    /* hide on touch or when explicitly disabled via class */
+    .sat-disabled {
+        display: none !important;
     }
 }
